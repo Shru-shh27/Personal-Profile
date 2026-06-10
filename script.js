@@ -75,10 +75,10 @@ window.addEventListener('resize', initCanvas);
 
 /* ── TYPING EFFECT ── */
 const phrases = [
+  'Shruti Shreya',
   'Full Stack Developer',
   'Problem Solver',
   'Open Source Enthusiast',
-  'Competitive Programmer'
 ];
 let pi = 0, ci = 0, deleting = false;
 

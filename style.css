@@ -450,21 +450,120 @@ section { position: relative; z-index: 2; padding: 6rem 4rem; }
 .ach-desc { font-size: .85rem; color: #999; line-height: 1.6; }
 
 /* ── EDUCATION ── */
-#education { background: var(--bg2); }
-.edu-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; }
-.edu-card {
-  background: var(--glass);
-  border: 1px solid var(--border);
-  padding: 2rem;
-  border-radius: 4px;
-  backdrop-filter: blur(12px);
-  transition: .3s;
+/* ================= EDUCATION ================= */
+
+#education {
+  background: transparent;
+  position: relative;
 }
-.edu-card:hover { border-color: var(--green); box-shadow: var(--green-glow); }
-.edu-degree { font-size: 1rem; font-weight: 700; margin-bottom: .3rem; }
-.edu-school { font-family: var(--mono); font-size: .78rem; color: var(--green); margin-bottom: .4rem; }
-.edu-year { font-size: .8rem; color: var(--gray); margin-bottom: .8rem; }
-.edu-desc { font-size: .88rem; color: #999; line-height: 1.6; }
+
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.edu-card {
+  position: relative;
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+
+  padding: 2rem;
+  transition: all 0.4s ease;
+}
+
+.edu-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: radial-gradient(
+    circle at top right,
+    rgba(57, 255, 20, 0.12),
+    transparent 55%
+  );
+
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.edu-card:hover::before {
+  opacity: 1;
+}
+
+.edu-card:hover {
+  transform: translateY(-8px);
+
+  background: rgba(57, 255, 20, 0.05);
+
+  border-color: rgba(57, 255, 20, 0.4);
+
+  box-shadow:
+    0 0 20px rgba(57, 255, 20, 0.15),
+    0 0 40px rgba(57, 255, 20, 0.08);
+}
+
+.edu-degree {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 0.7rem;
+}
+
+.edu-school {
+  font-family: var(--mono);
+  color: var(--green);
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.8rem;
+}
+
+.edu-year {
+  display: inline-block;
+  padding: 0.35rem 0.8rem;
+
+  background: rgba(57, 255, 20, 0.08);
+  border: 1px solid rgba(57, 255, 20, 0.2);
+  border-radius: 50px;
+
+  color: #bdbdbd;
+  font-size: 0.8rem;
+
+  margin-bottom: 1rem;
+}
+
+.edu-desc {
+  color: #d0d0d0;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+/* Floating glow effect */
+
+.edu-card::after {
+  content: "";
+  position: absolute;
+
+  width: 120px;
+  height: 120px;
+
+  top: -60px;
+  right: -60px;
+
+  background: rgba(57, 255, 20, 0.12);
+  border-radius: 50%;
+  filter: blur(50px);
+
+  pointer-events: none;
+}
 
 /* ── CONTACT ── */
 #contact { background: var(--bg); }
