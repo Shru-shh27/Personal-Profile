@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shruti Shreya — Portfolio</title>
+  <title>Experience — Shruti Shreya</title>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
@@ -889,14 +889,13 @@ footer span { color: var(--green); }
   <div class="cursor-ring" id="cursor-ring"></div>
   <canvas id="particles"></canvas>
 
-  <!-- ══ NAV ══ -->
   <nav id="navbar">
-    <div class="nav-logo">&lt;<span>/S</span>&gt;</div>
+    <a href="index.html" class="nav-logo">&lt;<span>/S</span>&gt;</a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="index.html" class="nav-active">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
-      <li><a href="experience.html">Experience</a></li>
+      <li><a href="experience.html" class="nav-active">Experience</a></li>
       <li><a href="certificates.html">Certificates</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -905,335 +904,142 @@ footer span { color: var(--green); }
     </div>
   </nav>
 
-  <!-- ══ HERO ══ -->
-  <section id="hero">
-    <svg class="hero-curve" width="260" height="500" viewBox="0 0 260 500" fill="none">
-      <path d="M200 0 C120 80, 20 150, 60 250 C100 350, 220 380, 180 500"
-            stroke="#39FF88" stroke-width="1.2" fill="none" opacity="0.5"/>
-      <circle cx="60"  cy="250" r="5" fill="#39FF88" opacity="0.6"/>
-      <circle cx="180" cy="420" r="3" fill="#39FF88" opacity="0.4"/>
-      <circle cx="200" cy="80"  r="2" fill="#39FF88" opacity="0.5"/>
-    </svg>
+  <div class="page-hero">
+    <div class="page-hero-glow"></div>
+    <div class="section-label" style="margin-bottom:.8rem;">My Journey</div>
+    <h1>Education &amp; <span>Experience</span></h1>
+    <p>A timeline of my academic journey, projects, hackathons, and achievements.</p>
+  </div>
 
-    <div class="hero-left reveal">
-      <div class="hero-tag">Available for hire</div>
-      <h1 class="hero-heading">
-        Who Am<br>
-        <span class="bracket">&lt;</span>I<span class="bracket">&gt;</span>?
-      </h1>
-      <p class="hero-subtitle" id="typing-text"></p>
-      <p class="hero-bio">
-        I'm Shruti Shreya — I architect clean, performant web experiences
-        from the database layer up to the last pixel.
-        I believe debugging is like solving a mystery — frustrating, but incredibly satisfying when everything finally clicks.
-      </p>
-      <div class="hero-cta">
-        <a href="projects.html" class="btn btn-primary">View Projects ↗</a>
-        <a href="shruti_resume.pdf" download="Shruti_Shreya_Resume.pdf" class="btn btn-outline">Download Resume ↓</a>
+  <section style="padding: 2rem 4rem 6rem; max-width: 860px; margin: 0 auto;">
+
+    <!-- EDUCATION -->
+    <div class="section-label reveal" style="margin-bottom:.5rem;">Education</div>
+    <h2 class="section-title reveal" style="margin-bottom:2rem;">Academic <span>Background</span></h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2024 — 2028</div>
+        <div class="timeline-card">
+          <div class="timeline-role">B.E. Computer Science &amp; Engineering</div>
+          <div class="timeline-org">// Chandigarh University, Punjab</div>
+          <div class="timeline-desc">Pursuing my undergraduate degree with a strong focus on full-stack development, data structures, and algorithms. CGPA: 8.45 / 10. Active participant in technical workshops and IEEE research activities.</div>
+          <div class="timeline-tags">
+            <span class="tag">Java</span><span class="tag">React</span><span class="tag">Spring Boot</span><span class="tag">DSA</span>
+          </div>
+        </div>
       </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2023 — 2024</div>
+        <div class="timeline-card">
+          <div class="timeline-role">Intermediate — PCM (CBSE)</div>
+          <div class="timeline-org">// Chapra Central School</div>
+          <div class="timeline-desc">Completed Class 12 with Physics, Chemistry, and Mathematics. Scored 77.4%. Built my first web projects during this year, sparking a deep interest in software development.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2021 — 2022</div>
+        <div class="timeline-card">
+          <div class="timeline-role">Matriculation (CBSE)</div>
+          <div class="timeline-org">// Chapra Central School</div>
+          <div class="timeline-desc">Completed Class 10 with a percentage of 84.4%. Developed strong foundations in logical thinking and problem-solving.</div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="hero-right reveal">
-      <div style="position:relative; display:inline-block;">
-        <div class="avatar-wrap">
-          <div class="avatar-ring">
-            <div class="avatar-face">
-              <svg class="face-svg" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="80" cy="72" r="44" fill="#1a2a1a"/>
-                <ellipse cx="66" cy="67" rx="5"  ry="5.5" fill="#39FF88"/>
-                <ellipse cx="94" cy="67" rx="5"  ry="5.5" fill="#39FF88"/>
-                <ellipse cx="67" cy="67" rx="2"  ry="2.5" fill="#0A0A0A"/>
-                <ellipse cx="95" cy="67" rx="2"  ry="2.5" fill="#0A0A0A"/>
-                <path d="M80 73 L76 84 L84 84" stroke="#39FF88" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M70 94 Q80 101 90 94" stroke="#39FF88" stroke-width="2" fill="none" stroke-linecap="round"/>
-                <path d="M55 100 Q58 118 80 122 Q102 118 105 100" fill="#1a3a1a" stroke="#39FF88" stroke-width="1"/>
-                <path d="M36 72 Q36 28 80 28 Q124 28 124 72 Q120 48 80 44 Q40 48 36 72Z" fill="#0f1a0f"/>
-                <ellipse cx="36"  cy="76" rx="6" ry="8" fill="#1a2a1a" stroke="#39FF88" stroke-width=".8"/>
-                <ellipse cx="124" cy="76" rx="6" ry="8" fill="#1a2a1a" stroke="#39FF88" stroke-width=".8"/>
-                <path d="M59 60 Q66 56 73 60"  stroke="#39FF88" stroke-width="2" stroke-linecap="round" fill="none"/>
-                <path d="M87 60 Q94 56 101 60" stroke="#39FF88" stroke-width="2" stroke-linecap="round" fill="none"/>
-              </svg>
-            </div>
-          </div>
-        </div>
+    <div class="divider" style="margin: 3rem 0;"></div>
 
-        <div class="float-badge">React.js</div>
-        <div class="float-badge">SpringBoot</div>
-        <div class="float-badge">MongoDB</div>
+    <!-- PROJECTS / EXPERIENCE -->
+    <div class="section-label reveal" style="margin-bottom:.5rem;">Projects &amp; Work</div>
+    <h2 class="section-title reveal" style="margin-bottom:2rem;">What I've <span>Built</span></h2>
 
-        <div class="social-rail">
-          <div class="social-item">
-            <a href="https://www.linkedin.com/in/shru-shh27/" class="social-icon" target="_blank">LI</a>
-            <div class="social-line"></div>
-          </div>
-          <div class="social-item">
-            <a href="https://github.com/Shru-shh27" class="social-icon" target="_blank">GH</a>
-            <div class="social-line"></div>
-          </div>
-          <div class="social-item">
-            <a href="https://leetcode.com/u/Shru_shreya/" class="social-icon" target="_blank">LC</a>
-            <div class="social-line"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <div class="timeline">
 
-  <div class="divider"></div>
-
-  <!-- ══ ABOUT ══ -->
-  <section id="about">
-    <div class="section-label">Who I Am</div>
-    <h2 class="section-title reveal">About <span>Me</span></h2>
-    <div class="about-grid">
-      <div class="about-text reveal">
-        <p>To enhance my knowledge and contribute meaningfully to an organization's growth, I am committed to continuous learning. By leveraging my strong technical expertise and interpersonal skills, I aim to actively participate in projects that foster innovation and efficiency.</p>
-        <p>I specialize in building scalable web applications, crafting intuitive interfaces, and optimizing backend performance. Every line of code I write is intentional — readable, efficient, and maintainable.</p>
-        <p>Outside of coding, I participate in competitive programming and contribute to open-source projects.</p>
-      </div>
-      <div class="about-stats reveal">
-        <div class="stat-card"><div class="stat-num">3rd</div><div class="stat-label">Year of College</div></div>
-        <div class="stat-card"><div class="stat-num">10+</div><div class="stat-label">Projects Completed</div></div>
-        <div class="stat-card"><div class="stat-num">10+</div><div class="stat-label">Technologies Mastered</div></div>
-        <div class="stat-card"><div class="stat-num">5★</div><div class="stat-label">Hackerrank Rating</div></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ══ SKILLS ══ -->
-  <section id="skills" style="padding:0;">
-    <div class="sk-root">
-      <div class="sk-eyebrow">// &nbsp;// &nbsp;TECH STACK</div>
-      <h2 class="sk-title">My <span>Skills</span></h2>
-      <div class="sk-block">
-        <div class="sk-cat">Languages</div>
-        <div class="sk-grid">
-          <div class="sk-item"><div class="sk-dot"></div><div class="sk-divider-line"></div><div class="sk-name">C</div><div class="sk-type">Systems</div></div>
-          <div class="sk-item"><div class="sk-dot"></div><div class="sk-divider-line"></div><div class="sk-name">C++</div><div class="sk-type">Systems</div></div>
-          <div class="sk-item"><div class="sk-dot"></div><div class="sk-divider-line"></div><div class="sk-name">Java</div><div class="sk-type">OOP</div></div>
-          <div class="sk-item"><div class="sk-dot"></div><div class="sk-divider-line"></div><div class="sk-name">Python</div><div class="sk-type">Scripting</div></div>
-          <div class="sk-item"><div class="sk-dot"></div><div class="sk-divider-line"></div><div class="sk-name">Dart</div><div class="sk-type">Flutter</div></div>
-        </div>
-      </div>
-      <div class="sk-block">
-        <div class="sk-cat">Frontend</div>
-        <div class="sk-grid">
-          <div class="sk-item"><div class="sk-dot"></div><div class="sk-divider-line"></div><div class="sk-name">HTML</div><div class="sk-type">Markup</div></div>
-          <div class="sk-item"><div class="sk-dot"></div><div class="sk-divider-line"></div><div class="sk-name">CSS</div><div class="sk-type">Styling</div></div>
-          <div class="sk-item"><div class="sk-dot"></div><div class="sk-divider-line"></div><div class="sk-name">JavaScript</div><div class="sk-type">Web</div></div>
-          <div class="sk-item"><div class="sk-dot"></div><div class="sk-divider-line"></div><div class="sk-name">React</div><div class="sk-type">UI Library</div></div>
-          <div class="sk-item"><div class="sk-dot"></div><div class="sk-divider-line"></div><div class="sk-name">Flutter</div><div class="sk-type">Mobile / Web</div></div>
-        </div>
-      </div>
-      <div class="sk-block">
-        <div class="sk-cat">Backend</div>
-        <div class="sk-grid">
-          <div class="sk-item"><div class="sk-dot"></div><div class="sk-divider-line"></div><div class="sk-name">Spring Boot</div><div class="sk-type">Java Framework</div></div>
-          <div class="sk-item"><div class="sk-dot"></div><div class="sk-divider-line"></div><div class="sk-name">Node.js</div><div class="sk-type">Server-Side</div></div>
-        </div>
-      </div>
-      <div class="sk-block">
-        <div class="sk-cat">Database</div>
-        <div class="sk-grid">
-          <div class="sk-item"><div class="sk-dot"></div><div class="sk-divider-line"></div><div class="sk-name">MongoDB</div><div class="sk-type">NoSQL</div></div>
-          <div class="sk-item"><div class="sk-dot"></div><div class="sk-divider-line"></div><div class="sk-name">SQL</div><div class="sk-type">Relational</div></div>
-        </div>
-      </div>
-      <div class="sk-block">
-        <div class="sk-cat">Tools &amp; DevOps</div>
-        <div class="sk-grid">
-          <div class="sk-item"><div class="sk-dot"></div><div class="sk-divider-line"></div><div class="sk-name">Git</div><div class="sk-type">Version Control</div></div>
-          <div class="sk-item"><div class="sk-dot"></div><div class="sk-divider-line"></div><div class="sk-name">GitHub</div><div class="sk-type">Remote Repos</div></div>
-          <div class="sk-item"><div class="sk-dot"></div><div class="sk-divider-line"></div><div class="sk-name">VS Code</div><div class="sk-type">Editor</div></div>
-          <div class="sk-item"><div class="sk-dot"></div><div class="sk-divider-line"></div><div class="sk-name">Vercel</div><div class="sk-type">Deployment</div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ══ PROJECTS ══ -->
-  <section id="projects">
-    <div class="section-label">What I've Built</div>
-    <h2 class="section-title reveal">Featured <span>Projects</span></h2>
-    <div class="projects-grid">
-
-      <div class="project-card reveal">
-        <div class="project-thumb">
-          <div class="thumb-code">// Real-time chat API
-GET /api/messages?room=general
-→ {
-  online: 42,
-  latency: "12ms",
-  protocol: "WebSocket"
-}</div>
-          <div class="project-number">01</div>
-        </div>
-        <div class="project-body">
-          <div class="project-tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span></div>
-          <div class="project-title">PulseChat</div>
-          <div class="project-desc">Scalable real-time chat application using WebSocket for instant messaging. Low-latency bidirectional communication with efficient handling of concurrent users and responsive UI.</div>
-          <div class="project-links">
-            <a href="https://github.com/Shru-shh27" target="_blank" class="project-link">⬡ GitHub</a>
+      <div class="timeline-item reveal">
+        <div class="timeline-date">Apr 2026</div>
+        <div class="timeline-card">
+          <div class="timeline-role">PulseChat — Real-Time Chat App</div>
+          <div class="timeline-org">// Personal Project</div>
+          <div class="timeline-desc">Built a scalable real-time chat application using WebSocket. Implemented low-latency bidirectional communication and efficient handling of concurrent users with a responsive React UI.</div>
+          <div class="timeline-tags">
+            <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">WebSocket</span>
           </div>
         </div>
       </div>
 
-      <div class="project-card reveal">
-        <div class="project-thumb">
-          <div class="thumb-code">// Real-time AQI lookup
-Future&lt;AQIData&gt; fetchAQI(
-  String city) async {
-  final res = await api.get(city);
-  return AQIData(
-    value: res.aqi,
-    category: res.level,
-  );
-}</div>
-          <div class="project-number">02</div>
-        </div>
-        <div class="project-body">
-          <div class="project-tags"><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Mobile</span></div>
-          <div class="project-title">AQI Monitor App</div>
-          <div class="project-desc">Flutter mobile app for real-time Air Quality Index monitoring. Search any city to see AQI values, color-coded categories, health impact details, and tailored safety precautions.</div>
-          <div class="project-links">
-            <a href="https://github.com/Shru-shh27/aqi_app" target="_blank" class="project-link">⬡ GitHub</a>
+      <div class="timeline-item reveal">
+        <div class="timeline-date">Mar 2026</div>
+        <div class="timeline-card">
+          <div class="timeline-role">BrainPop — English Learning Platform</div>
+          <div class="timeline-org">// Personal Project</div>
+          <div class="timeline-desc">Built an interactive web app to improve vocabulary and grammar skills. Implemented dynamic quizzes, real-time feedback, and performance tracking with a responsive UI.</div>
+          <div class="timeline-tags">
+            <span class="tag">React</span><span class="tag">Spring Boot</span><span class="tag">MongoDB</span>
           </div>
         </div>
       </div>
 
-      <div class="project-card reveal">
-        <div class="project-thumb">
-          <div class="thumb-code">// Adaptive quiz engine
-const quiz = await generateQuiz({
-  topic: "Present Perfect",
-  level: user.proficiency,
-  count: 5,
-  mode: "multiple_choice"
-});</div>
-          <div class="project-number">03</div>
-        </div>
-        <div class="project-body">
-          <div class="project-tags"><span class="tag">React</span><span class="tag">Spring Boot</span><span class="tag">MongoDB</span></div>
-          <div class="project-title">BrainPop — Learn English</div>
-          <div class="project-desc">Interactive English learning platform with adaptive quizzes, real-time feedback, and performance tracking. Clean responsive UI for structured and engaging learning experience.</div>
-          <div class="project-links">
-            <a href="https://github.com/Shru-shh27/BrainPop-frontend" target="_blank" class="project-link">⬡ GitHub</a>
+      <div class="timeline-item reveal">
+        <div class="timeline-date">Dec 2025</div>
+        <div class="timeline-card">
+          <div class="timeline-role">AQI Monitor — Flutter Mobile App</div>
+          <div class="timeline-org">// Personal Project</div>
+          <div class="timeline-desc">Real-time AQI monitoring app using the Air Quality Open Data Platform API. Suggests precautionary measures based on local AQI with detailed health implications.</div>
+          <div class="timeline-tags">
+            <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">REST API</span>
           </div>
         </div>
       </div>
 
     </div>
-    <div style="text-align:center; margin-top:2.5rem;">
-      <a href="projects.html" class="btn btn-outline">View All Projects ↗</a>
-    </div>
-  </section>
 
-  <div class="divider"></div>
+    <div class="divider" style="margin: 3rem 0;"></div>
 
-  <!-- ══ ACHIEVEMENTS ══ -->
-  <section id="achievements">
-    <div class="section-label">Recognition</div>
-    <h2 class="section-title reveal"><span>Achievements</span></h2>
-    <div class="ach-grid">
-      <div class="ach-card reveal">
-        <div class="ach-title">Hackathon Finalist</div>
-        <div class="ach-meta">// Top 5 Finalist</div>
-        <div class="ach-desc">Top 5 finalist of coding hackathons, leading team to finals with innovative solutions.</div>
-      </div>
-      <div class="ach-card reveal">
-        <div class="ach-title">HackerRank 5 Star</div>
-        <div class="ach-meta">// C++ &amp; Python</div>
-        <div class="ach-desc">Achieved 5-star rating in C++ and 4-star in Python on HackerRank through consistent problem solving.</div>
-      </div>
-      <div class="ach-card reveal">
-        <div class="ach-title">IEEE Research Team</div>
-        <div class="ach-meta">// Core Member</div>
-        <div class="ach-desc">Part of core research team with IEEE members, contributing to technical research and innovation.</div>
-      </div>
-      <div class="ach-card reveal">
-        <div class="ach-title">CGPA 8.45</div>
-        <div class="ach-meta">// Chandigarh University</div>
-        <div class="ach-desc">Maintaining strong academic performance in Computer Science and Engineering.</div>
-      </div>
-    </div>
-  </section>
+    <!-- ACHIEVEMENTS & LEADERSHIP -->
+    <div class="section-label reveal" style="margin-bottom:.5rem;">Leadership &amp; Achievements</div>
+    <h2 class="section-title reveal" style="margin-bottom:2rem;">Extra <span>Curricular</span></h2>
 
-  <div class="divider"></div>
+    <div class="timeline">
 
-  <!-- ══ EDUCATION ══ -->
-  <section id="education">
-    <div class="section-label">Background</div>
-    <h2 class="section-title reveal">My <span>Education</span></h2>
-    <div class="edu-grid">
-      <div class="edu-card reveal">
-        <div class="edu-degree">Bachelor of Engineering in Computer Science</div>
-        <div class="edu-school">// Chandigarh University</div>
-        <div class="edu-year">2024 — 2028</div>
-        <div class="edu-desc">CGPA: 8.45 / 10</div>
-      </div>
-      <div class="edu-card reveal">
-        <div class="edu-degree">Intermediate (CBSE)</div>
-        <div class="edu-school">// Chapra Central School</div>
-        <div class="edu-year">2023 — 2024</div>
-        <div class="edu-desc">Percentage: 77.4% (PCM)</div>
-      </div>
-      <div class="edu-card reveal">
-        <div class="edu-degree">Matriculation (CBSE)</div>
-        <div class="edu-school">// Chapra Central School</div>
-        <div class="edu-year">2021 — 2022</div>
-        <div class="edu-desc">Percentage: 84.4%</div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ══ CONTACT ══ -->
-  <section id="contact">
-    <div class="section-label">Get In Touch</div>
-    <h2 class="section-title reveal">Let's <span>Connect</span></h2>
-    <div class="contact-wrap">
-      <div class="contact-info reveal">
-        <p>I'm currently open to new opportunities — freelance projects, full-time roles, and interesting collaborations. If you have a project in mind or just want to say hello, my inbox is always open.</p>
-        <div class="contact-links">
-          <a href="mailto:shruti.shreya27@gmail.com" class="contact-link">
-            <div class="contact-link-icon">GM</div>
-            shruti.shreya27@gmail.com
-          </a>
-          <a href="https://github.com/Shru-shh27" class="contact-link" target="_blank">
-            <div class="contact-link-icon">GH</div>
-            github.com/Shru-shh27
-          </a>
-          <a href="https://www.linkedin.com/in/shru-shh27/" class="contact-link" target="_blank">
-            <div class="contact-link-icon">LD</div>
-            linkedin.com/in/shru-shh27
-          </a>
-          <a href="https://leetcode.com/u/Shru_shreya/" class="contact-link" target="_blank">
-            <div class="contact-link-icon">LC</div>
-            leetcode.com/u/Shru_shreya
-          </a>
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2024 — Present</div>
+        <div class="timeline-card">
+          <div class="timeline-role">IEEE Core Research Team Member</div>
+          <div class="timeline-org">// Chandigarh University IEEE Student Branch</div>
+          <div class="timeline-desc">Part of the core research team with IEEE members, contributing to technical research and innovation initiatives within the university.</div>
         </div>
       </div>
-      <div class="contact-form reveal">
-        <div class="form-group">
-          <label class="form-label">Name</label>
-          <input class="form-input" type="text" placeholder="Your name">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2024 — Present</div>
+        <div class="timeline-card">
+          <div class="timeline-role">Hackathon Finalist &amp; Team Lead</div>
+          <div class="timeline-org">// University Coding Competitions</div>
+          <div class="timeline-desc">Top 5 finalist in university coding hackathons. Led team to the finals and participated in workshops and technical skill-building sessions organized by the university.</div>
+          <div class="timeline-tags">
+            <span class="tag">Leadership</span><span class="tag">Team Work</span><span class="tag">Problem Solving</span>
+          </div>
         </div>
-        <div class="form-group">
-          <label class="form-label">Email</label>
-          <input class="form-input" type="email" placeholder="your@email.com">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Message</label>
-          <textarea class="form-textarea" placeholder="Tell me about your project..."></textarea>
-        </div>
-        <button class="btn btn-primary" style="align-self:flex-start" onclick="sendMessage(this)">Send Message →</button>
       </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-date">Ongoing</div>
+        <div class="timeline-card">
+          <div class="timeline-role">Competitive Programming</div>
+          <div class="timeline-org">// HackerRank · LeetCode</div>
+          <div class="timeline-desc">Achieved 5-star rating in C++ and 4-star in Python on HackerRank. Consistently solving DSA problems on LeetCode across dynamic programming, graphs, and system design topics.</div>
+          <div class="timeline-tags">
+            <span class="tag">DSA</span><span class="tag">C++</span><span class="tag">Python</span>
+          </div>
+        </div>
+      </div>
+
     </div>
+
   </section>
 
   <footer>
