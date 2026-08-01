@@ -947,23 +947,35 @@ footer span { color: var(--green); }
       </div>
 
       <div class="contact-form reveal">
-        <div class="form-group">
-          <label class="form-label">Name</label>
-          <input class="form-input" type="text" placeholder="Your name">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Email</label>
-          <input class="form-input" type="email" placeholder="your@email.com">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Subject</label>
-          <input class="form-input" type="text" placeholder="Project collaboration, internship, etc.">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Message</label>
-          <textarea class="form-textarea" placeholder="Tell me about your project or idea..."></textarea>
-        </div>
-        <button class="btn btn-primary" style="align-self:flex-start" onclick="sendMessage(this)">Send Message →</button>
+       <form action="https://formsubmit.co/shruti.shreya27@gmail.com" method="POST" class="contact-form">
+
+    <input type="hidden" name="_subject" value="New Portfolio Contact!">
+
+    <div class="form-group">
+        <label class="form-label">Name</label>
+        <input class="form-input" type="text" name="Name" required>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">Email</label>
+        <input class="form-input" type="email" name="Email" required>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">Subject</label>
+        <input class="form-input" type="text" name="Subject" required>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">Message</label>
+        <textarea class="form-textarea" name="Message" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        Send Message →
+    </button>
+
+</form>
       </div>
 
     </div>
@@ -1116,17 +1128,17 @@ document.querySelectorAll('.nav-links a').forEach(a =>
   })
 );
 
-/* ── CONTACT FORM ── */
-function sendMessage(btn) {
-  btn.textContent        = 'Sent! ✓';
-  btn.style.background   = 'transparent';
-  btn.style.color        = 'var(--green)';
-  setTimeout(() => {
-    btn.textContent      = 'Send Message →';
-    btn.style.background = 'var(--green)';
-    btn.style.color      = '#000';
-  }, 3000);
-}
+// /* ── CONTACT FORM ── */
+// function sendMessage(btn) {
+//   btn.textContent        = 'Sent! ✓';
+//   btn.style.background   = 'transparent';
+//   btn.style.color        = 'var(--green)';
+//   setTimeout(() => {
+//     btn.textContent      = 'Send Message →';
+//     btn.style.background = 'var(--green)';
+//     btn.style.color      = '#000';
+//   }, 3000);
+// }
 
 </script>
 </body>

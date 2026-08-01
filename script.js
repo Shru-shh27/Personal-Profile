@@ -138,14 +138,14 @@ document.querySelectorAll('.nav-links a').forEach(a =>
 );
 
 
-/* ── CONTACT FORM ── */
-function sendMessage(btn) {
-  btn.textContent        = 'Sent! ✓';
-  btn.style.background   = 'transparent';
-  btn.style.color        = 'var(--green)';
-  setTimeout(() => {
-    btn.textContent      = 'Send Message →';
-    btn.style.background = 'var(--green)';
-    btn.style.color      = '#000';
-  }, 3000);
-}
+// /* ── CONTACT FORM ── */
+// function sendMessage(btn) {
+//   btn.textContent        = 'Sent! ✓';
+//   btn.style.background   = 'transparent';
+//   btn.style.color        = 'var(--green)';
+//   setTimeout(() => {
+//     btn.textContent      = 'Send Message →';
+//     btn.style.background = 'var(--green)';
+//     btn.style.color      = '#000';
+//   }, 3000);
+// }
